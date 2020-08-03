@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+header {
+  background-color: black;
+  font-size: 1.6rem; }
+  header .navigation * {
+    color: white; }
+  header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.container-small {
+  width: 80%;
+  margin: 0 auto; }
