@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 *,
 *::after,
 *::before {
@@ -9,17 +11,88 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.6rem; }
 
 header {
-  background-color: black;
-  font-size: 1.6rem; }
+  position: relative; }
   header .navigation * {
     color: white; }
   header .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  header .menu-container {
+    background-color: black; }
+
+header .navigation ul.menu-left li {
+  display: inline;
+  cursor: pointer; }
+  header .navigation ul.menu-left li span {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-left: 5px; }
+
+header .navigation ul.login-menu li {
+  display: inline; }
+  header .navigation ul.login-menu li span {
+    font-family: "Source Sans Pro", sans-serif;
+    margin-left: 5px; }
+
+header .navigation .logo img {
+  max-height: 30px;
+  width: auto; }
+
+header #mega-menu {
+  position: absolute;
+  width: 100%;
+  visibility: hidden; }
+
+header #mega-menu > div {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black; }
+  header #mega-menu > div .megamenu-left {
+    flex: 1 1 10%;
+    padding: 1rem; }
+    header #mega-menu > div .megamenu-left ul {
+      list-style: none;
+      padding-top: 1rem; }
+    header #mega-menu > div .megamenu-left ul li {
+      margin-bottom: 1.5rem; }
+      header #mega-menu > div .megamenu-left ul li a {
+        font-family: "Source Sans Pro", sans-serif;
+        color: black;
+        text-decoration: none; }
+        header #mega-menu > div .megamenu-left ul li a:hover {
+          font-weight: bold; }
+  header #mega-menu > div .megamenu-right {
+    flex: 1 0 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 1rem; }
+    header #mega-menu > div .megamenu-right .card {
+      flex: 0 0 auto;
+      margin-right: 10px; }
+
+#mega-menu .megamenu-right .card {
+  margin-bottom: 2rem; }
+  #mega-menu .megamenu-right .card .img-shoes {
+    max-width: 150px;
+    height: auto;
+    overflow: hidden; }
+    #mega-menu .megamenu-right .card .img-shoes img {
+      width: 100%;
+      height: auto;
+      transition: transform .8s ease; }
+  #mega-menu .megamenu-right .card .text-shoes {
+    font-family: "Open Sans", sans-serif; }
+  #mega-menu .megamenu-right .card:hover .img-shoes img {
+    transform: scale(1.2); }
+
+header {
+  font-size: 1.6rem; }
 
 .container-small {
   width: 80%;

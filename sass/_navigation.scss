@@ -1,0 +1,105 @@
+header {
+    position: relative;
+    .navigation * {
+        color: white;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-container {
+        background-color: black;
+    }
+}
+
+header .navigation {
+    ul.menu-left {
+        li {
+            display: inline;
+            cursor: pointer;
+            span {
+                font-family: $fuente-light;
+                margin-left: 5px;
+            }
+        }
+    }
+    ul.login-menu {
+        li {
+            display: inline;
+            span {
+                font-family: $fuente-light;
+                margin-left: 5px;
+            }
+        }
+    }
+    .logo img {
+        max-height: 30px;
+        width: auto;
+    }
+}
+
+header #mega-menu {
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+}
+
+header #mega-menu>div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    .megamenu-left {
+        flex: 1 1 10%;
+        padding: 1rem;
+        ul {
+            list-style: none;
+            padding-top: 1rem;
+        }
+        ul li {
+            margin-bottom: 1.5rem;
+            a {
+                font-family: $fuente-light;
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .megamenu-right {
+        flex: 1 0 90%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+        .card {
+            flex: 0 0 auto;
+            margin-right: 10px;
+        }
+    }
+}
+
+#mega-menu .megamenu-right .card {
+    margin-bottom: 2rem;
+    .img-shoes {
+        max-width: 150px;
+        height: auto;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+            transition: transform .8s ease;
+        }
+    }
+    .text-shoes {
+        font-family: $fuente-myrad;
+    }
+    &:hover {
+        .img-shoes img {
+            transform: scale(1.2);
+        }
+    }
+}

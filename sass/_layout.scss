@@ -1,21 +1,10 @@
 header {
-    background-color: black;
     // FONT
-// FONT
-font-size: $default-font-size;
-
-    .navigation *{
-        color: white;
-    }
-    .navigation {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    // FONT
+    font-size: $default-font-size;
 }
 
-
-.container-small{
-    width:80%;
+.container-small {
+    width: 80%;
     margin: 0 auto;
 }
