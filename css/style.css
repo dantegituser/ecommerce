@@ -12,7 +12,8 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif; }
 
 header {
   position: relative; }
@@ -36,7 +37,8 @@ header .navigation ul.login-menu li {
   display: inline; }
   header .navigation ul.login-menu li span {
     font-family: "Source Sans Pro", sans-serif;
-    margin-left: 5px; }
+    margin-left: 5px;
+    cursor: pointer; }
 
 header .navigation .logo img {
   max-height: 30px;
@@ -90,6 +92,63 @@ header #mega-menu > div {
     font-family: "Open Sans", sans-serif; }
   #mega-menu .megamenu-right .card:hover .img-shoes img {
     transform: scale(1.2); }
+
+header .navigation .cart .link-cart {
+  position: relative; }
+  header .navigation .cart .link-cart div.cart-content {
+    display: none;
+    padding: 10px;
+    width: 200px;
+    background-color: white; }
+    header .navigation .cart .link-cart div.cart-content div.prod-detail {
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      background-color: #e2e2e5;
+      margin-bottom: 3px; }
+    header .navigation .cart .link-cart div.cart-content * {
+      color: black !important; }
+    header .navigation .cart .link-cart div.cart-content h5 {
+      text-align: center;
+      font-weight: bold; }
+    header .navigation .cart .link-cart div.cart-content .empty-cart {
+      text-align: center;
+      color: white !important;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 3px 0;
+      font-family: "Open Sans", sans-serif;
+      background-color: crimson;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+  header .navigation .cart .link-cart:hover div.cart-content {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0; }
+
+header .navigation .cart .link-cart .cart-content .prod-detail {
+  width: 100%; }
+  header .navigation .cart .link-cart .cart-content .prod-detail .img-cart {
+    flex: 0 1 30%; }
+    header .navigation .cart .link-cart .cart-content .prod-detail .img-cart img {
+      max-width: 100%;
+      height: auto; }
+  header .navigation .cart .link-cart .cart-content .prod-detail .product-name {
+    flex: 1 1 40%;
+    text-align: center; }
+    header .navigation .cart .link-cart .cart-content .prod-detail .product-name .title {
+      font-size: 1.2rem;
+      font-weight: bold; }
+    header .navigation .cart .link-cart .cart-content .prod-detail .product-name .price {
+      font-size: 1.2rem; }
+  header .navigation .cart .link-cart .cart-content .prod-detail .boton-cart {
+    flex: 0 1 10%; }
+    header .navigation .cart .link-cart .cart-content .prod-detail .boton-cart i {
+      color: red !important;
+      cursor: pointer; }
 
 header {
   font-size: 1.6rem; }
