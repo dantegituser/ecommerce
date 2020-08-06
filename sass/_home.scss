@@ -1,0 +1,189 @@
+#home section.header-section {
+    background-image: linear-gradient(to right bottom, #5dd694, #61dd8f, #67e388, #6eea81, #78f078, #78f078, #78f078, #78f078, #6eea81, #67e388, #61dd8f, #5dd694);
+    padding-bottom: 10rem;
+    .header-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title-hero {
+            flex: 1 0 40%;
+            h1 {
+                font-size: 6em;
+                color: white;
+            }
+            h3 {
+                font-size: 4em;
+                color: white;
+            }
+        }
+        .img-hero {
+            flex: 1 0 40%;
+        }
+    }
+}
+
+#imagenes .imagenes {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    transform: translateY(-10rem);
+    .left-div {
+        flex: 1 0 50%;
+        background-color: rgb(240, 241, 241);
+        margin-right: 15px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .right-div {
+        flex: 1 0 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            background-color: rgb(240, 241, 241);
+            flex: 1 0 auto;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-right: 15px;
+        }
+        div:first-child {
+            margin-bottom: 15px;
+        }
+        img {
+            flex: 1 1 auto;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+#home #new-arrivals {
+    h2 {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
+
+#home #new-arrivals .slideShowArrivals {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 8rem;
+    .flechaizquierda {
+        flex: 0 1 30px;
+        display: flex;
+        align-items: center;
+        background-color: whitesmoke;
+        justify-content: center;
+        position: relative;
+        z-index: 1100;
+        i {
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+        &:hover {
+            i {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .slider-cont {
+        max-width: 800px;
+        flex: 1 0 800px;
+        display: flex;
+    }
+    .flechaderecha {
+        flex: 0 1 30px;
+        display: flex;
+        align-items: center;
+        background-color: whitesmoke;
+        justify-content: center;
+        position: relative;
+        z-index: 1000;
+        i {
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+        &:hover {
+            i {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+#home #new-arrivals .slideShowArrivals .slider-cont .prod-card {
+    padding: 5px;
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 190px;
+    .new-tag {
+        background-color: #f4c121;
+        padding: 2px 3px;
+        color: black;
+        font-size: 1.2rem;
+    }
+    .img-prod {
+        position: relative;
+        height: 218px;
+        width: 200px;
+        img {
+            position: absolute;
+            top: 40px;
+            bottom: 0;
+            transform: rotate(-45deg);
+            max-width: 100%;
+        }
+    }
+    .stars-tag {
+        margin-bottom: 5px;
+        i {
+            color: #f4c121;
+        }
+    }
+    .short-desc {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .price {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .add-to-cart span {
+        cursor: pointer;
+        background-color: #16a0c1;
+        color: white;
+        padding: 3px 10px;
+        font-size: 1.2rem;
+        -webkit-box-shadow: 3px 3px 0px 0px rgba(244, 193, 33, 1);
+        -moz-box-shadow: 3px 3px 0px 0px rgba(244, 193, 33, 1);
+        box-shadow: 3px 3px 0px 0px rgba(244, 193, 33, 1);
+    }
+}
+
+section.panoramic-image {
+    position: relative;
+    .panoramic-div {
+        img {
+            max-width: 100%;
+        }
+    }
+    .panoramic-data {
+        position: absolute;
+        width: 300px;
+        right: 0;
+        top: 10px;
+        * {
+            color: white;
+        }
+    }
+}
