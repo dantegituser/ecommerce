@@ -1,10 +1,10 @@
 @keyframes fromTop {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateY(-10rem);
     }
     80% {
-        transform: translateX(1rem);
+        transform: translateY(1rem);
     }
     100% {
         opacity: 1;
@@ -14,13 +14,13 @@
 
 @keyframes fromLeft {
     0% {
-        opacity: 0;
+        transform: translateX(-20rem);
     }
     80% {
-        opacity: 0;
+        transform: translateX(1rem);
     }
     100% {
-        opacity: 0;
+        transform: translate(0);
     }
 }
 
@@ -29,9 +29,9 @@
         opacity: 0;
     }
     80% {
-        opacity: 0;
+        opacity: 0.5;
     }
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }

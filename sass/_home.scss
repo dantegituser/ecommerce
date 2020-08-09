@@ -170,6 +170,11 @@
         -webkit-box-shadow: 3px 3px 0px 0px rgba(244, 193, 33, 1);
         -moz-box-shadow: 3px 3px 0px 0px rgba(244, 193, 33, 1);
         box-shadow: 3px 3px 0px 0px rgba(244, 193, 33, 1);
+        transition: transform 0.3s ease;
+        display: block;
+    }
+    .add-to-cart:hover span {
+        transform: translateY(-3px);
     }
 }
 
@@ -321,17 +326,21 @@ section.shoes-section {
     }
     .modelsdiv {
         justify-content: space-between;
+        cursor: pointer;
         .models-div-title {
             font-family: $fuente-logo;
             font-weight: normal;
             color: #DB530F;
             font-size: 1.3em;
+            opacity: 0;
         }
         .models-div-link a {
             font-family: $fuente-light;
             font-weight: normal;
             color: #ffffff;
             text-decoration: none;
+            display: block;
+            opacity: 0;
         }
         .models-div-shoe {
             text-align: center;
@@ -346,6 +355,21 @@ section.shoes-section {
         flex-direction: column;
         align-items: center;
         background-color: #2140D8;
+    }
+    .modelsdiv2:hover,
+    .modelsdiv3:hover {
+        .models-div-title {
+            animation-name: opacityShow;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            opacity: 1;
+        }
+        .models-div-link a {
+            animation-name: fromLeft, opacityShow;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(.35, .82, .62, 1.25);
+            opacity: 1;
+        }
     }
     .modelsdiv3 {
         background-image: url(../img/fondo-court.jpg);
@@ -408,7 +432,7 @@ section.social .social-images {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            transition: all 0.6s ease;
+            transition: opacity 0.6s ease;
             cursor: pointer;
             * {
                 color: white;

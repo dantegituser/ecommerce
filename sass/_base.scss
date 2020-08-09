@@ -18,3 +18,21 @@ body {
     font-size: $default-font-size;
     font-family: $fuente-myrad;
 }
+
+.fromTop {
+    animation-name: fromTop;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.35, .82, .62, 1.25);
+}
+
+.fromLeft {
+    animation-name: fromLeft;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.35, .82, .62, 1.25);
+}
+
+.opacityShow {
+    animation-name: opacityShow;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
