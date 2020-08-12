@@ -1,0 +1,26 @@
+[{ "id": 1, "new": true, "img": "img/prods/01.png", "stars": 3, "name": "Air Max 270", "price": "350", "thumb1": "", "thumb2": "", "categories": ["men", "sport", "air"], "sizes": [9, 10, 11], "colors": ["blue", "gray", "black"] },
+    { "id": 2, "new": false, "img": "img/prods/02.png", "stars": 4, "name": "Air Max 270", "price": "400", "thumb1": "", "thumb2": "", "categories": ["men", "sport", "air"], "sizes": [9, 10, 11], "colors": ["gray", "black"] },
+    { "id": 3, "new": false, "img": "img/prods/03.png", "stars": 3, "name": "Air Force 1 Low", "price": "289", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [8, 9, 10], "colors": ["blue", "black"] },
+    { "id": 4, "new": true, "img": "img/prods/04.png", "stars": 5, "name": "Air Force 1 Low", "price": "674", "thumb1": "", "thumb2": "", "categories": ["casual", "men", "shox"], "sizes": [10, 11], "colors": ["green", "grey"] },
+    { "id": 5, "new": true, "img": "img/prods/05.png", "stars": 3, "name": "SB Air Force II Low", "price": "647", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [10], "colors": ["red", "blue", "white"] },
+    { "id": 6, "new": false, "img": "img/prods/06.png", "stars": 4, "name": "SB Air Force II Low", "price": "589", "thumb1": "", "thumb2": "", "categories": ["sport", "men"], "sizes": [8, 11], "colors": ["blue", "black"] },
+    { "id": 7, "new": false, "img": "img/prods/07.png", "stars": 5, "name": "Tanjun", "price": "476", "thumb1": "", "thumb2": "", "categories": ["men", "sport", "air"], "sizes": [10, 11], "colors": ["green", "grey"] },
+    { "id": 8, "new": true, "img": "img/prods/08.png", "stars": 3, "name": "Tanjun", "price": "376", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [8, 9], "colors": ["red", "blue", "white"] },
+    { "id": 9, "new": false, "img": "img/prods/09.png", "stars": 4, "name": "SB Nyjah Free", "price": "350", "thumb1": "", "thumb2": "", "categories": ["casual", "men", "shox"], "sizes": [9, 10, 11], "colors": ["white", "black"] },
+    { "id": 10, "new": false, "img": "img/prods/10.png", "stars": 5, "name": "SB Nyjah Free", "price": "400", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [9, 10, 11], "colors": ["blue", "gray", "black"] },
+    { "id": 12, "new": true, "img": "img/prods/12.png", "stars": 3, "name": "Air Force 1 07", "price": "289", "thumb1": "", "thumb2": "", "categories": ["sport", "men"], "sizes": [8, 9, 10], "colors": ["gray", "black"] },
+    { "id": 13, "new": true, "img": "img/prods/13.png", "stars": 3, "name": "Air Force 1 07", "price": "674", "thumb1": "", "thumb2": "", "categories": ["men", "sport", "air"], "sizes": [10, 11], "colors": ["blue", "black"] },
+    { "id": 14, "new": false, "img": "img/prods/14.png", "stars": 4, "name": "Air Max 200", "price": "647", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [10], "colors": ["green", "grey"] },
+    { "id": 15, "new": false, "img": "img/prods/15.png", "stars": 3, "name": "Air Max 200", "price": "589", "thumb1": "", "thumb2": "", "categories": ["casual", "men", "shox"], "sizes": [8, 11], "colors": ["red", "blue", "white"] },
+    { "id": 16, "new": true, "img": "img/prods/16.png", "stars": 5, "name": "M2K Tekno", "price": "476", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [10, 11], "colors": ["blue", "black"] },
+    { "id": 17, "new": false, "img": "img/prods/17.png", "stars": 3, "name": "M2K Tekno", "price": "376", "thumb1": "", "thumb2": "", "categories": ["sport", "men"], "sizes": [8, 9], "colors": ["green", "grey"] },
+    { "id": 18, "new": false, "img": "img/prods/18.png", "stars": 4, "name": "Air Max 270 Bowfin", "price": "350", "thumb1": "", "thumb2": "", "categories": ["men", "sport", "air"], "sizes": [9, 10, 11], "colors": ["red", "blue", "white"] },
+    { "id": 19, "new": true, "img": "img/prods/19.png", "stars": 5, "name": "Air Max 270 Bowfin", "price": "400", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [9, 10, 11], "colors": ["white", "black"] },
+    { "id": 20, "new": true, "img": "img/prods/20.png", "stars": 3, "name": "Air Vapormax Flyknit 3", "price": "289", "thumb1": "", "thumb2": "", "categories": ["casual", "men", "shox"], "sizes": [8, 9, 10], "colors": ["blue", "gray", "black"] },
+    { "id": 21, "new": false, "img": "img/prods/21.png", "stars": 4, "name": "Air Vapormax Flyknit 3", "price": "674", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [10, 11], "colors": ["gray", "black"] },
+    { "id": 22, "new": false, "img": "img/prods/22.png", "stars": 5, "name": "SB Stefan Janoski Max", "price": "647", "thumb1": "", "thumb2": "", "categories": ["sport", "men"], "sizes": [10], "colors": ["blue", "black"] },
+    { "id": 23, "new": true, "img": "img/prods/23.png", "stars": 3, "name": "SB Stefan Janoski Max", "price": "589", "thumb1": "", "thumb2": "", "categories": ["men", "sport", "air"], "sizes": [8, 11], "colors": ["green", "grey"] },
+    { "id": 24, "new": true, "img": "img/prods/24.png", "stars": 4, "name": "Air Max Motion 2", "price": "476", "thumb1": "", "thumb2": "", "categories": ["woman", "casual", "shox"], "sizes": [10, 11], "colors": ["red", "blue", "white"] }
+
+
+]

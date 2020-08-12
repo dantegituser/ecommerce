@@ -95,8 +95,13 @@ header #mega-menu>div {
             transition: transform .8s ease;
         }
     }
+    a {
+        text-decoration: none;
+    }
     .text-shoes {
         font-family: $fuente-myrad;
+        font-weight: bold;
+        color: black;
     }
     &:hover {
         .img-shoes img {

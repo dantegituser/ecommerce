@@ -27,12 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
             menuInvisible();
         });
         //acciones click
-        sliderLeftArrow.addEventListener('click', () => {
-            avanzarIzquierdaSlider();
-        });
-        sliderRightArrow.addEventListener('click', () => {
-            avanzarDerechaSlider();
-        });
+
+        if (sliderLeftArrow) {
+            sliderLeftArrow.addEventListener('click', () => {
+                avanzarIzquierdaSlider();
+            });
+            sliderRightArrow.addEventListener('click', () => {
+                avanzarDerechaSlider();
+            });
+        }
+
     }
 
 

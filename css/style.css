@@ -130,8 +130,12 @@ header #mega-menu > div {
       width: 100%;
       height: auto;
       transition: transform .8s ease; }
+  #mega-menu .megamenu-right .card a {
+    text-decoration: none; }
   #mega-menu .megamenu-right .card .text-shoes {
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: black; }
   #mega-menu .megamenu-right .card:hover .img-shoes img {
     transform: scale(1.2); }
 
@@ -737,6 +741,8 @@ section.social .social-images {
       max-width: 100px; }
   #category section.category .category-content .category-items .prod-card .product-stars {
     margin-bottom: 1rem; }
+    #category section.category .category-content .category-items .prod-card .product-stars i::before {
+      color: #f4c121; }
   #category section.category .category-content .category-items .prod-card .product-card-name {
     font-weight: bold;
     font-size: .8em;
@@ -748,7 +754,6 @@ section.social .social-images {
     margin-bottom: 1rem; }
   #category section.category .category-content .category-items .prod-card .product-card-buttons div {
     background-color: black;
-    color: white;
     font-size: .8em;
     font-family: "Source Sans Pro", sans-serif;
     padding: 3px 6px;
@@ -757,5 +762,13 @@ section.social .social-images {
     cursor: pointer; }
   #category section.category .category-content .category-items .prod-card .product-card-buttons .prod-card-button-cart {
     background-color: #0B78AF; }
+    #category section.category .category-content .category-items .prod-card .product-card-buttons .prod-card-button-cart a {
+      color: white;
+      text-align: center;
+      text-decoration: none; }
   #category section.category .category-content .category-items .prod-card .product-card-buttons .prod-card-button-detail {
     background-color: #77AD3D; }
+    #category section.category .category-content .category-items .prod-card .product-card-buttons .prod-card-button-detail a {
+      color: white;
+      text-align: center;
+      text-decoration: none; }

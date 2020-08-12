@@ -183,6 +183,9 @@
     }
     .product-stars {
         margin-bottom: 1rem;
+        i::before {
+            color: #f4c121;
+        }
     }
     .product-card-name {
         font-weight: bold;
@@ -198,7 +201,6 @@
     .product-card-buttons {
         div {
             background-color: black;
-            color: white;
             font-size: .8em;
             font-family: $fuente-light;
             padding: 3px 6px;
@@ -208,9 +210,19 @@
         }
         .prod-card-button-cart {
             background-color: #0B78AF;
+            a {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+            }
         }
         .prod-card-button-detail {
             background-color: #77AD3D;
+            a {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+            }
         }
     }
 }
