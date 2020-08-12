@@ -131,11 +131,13 @@ header #mega-menu > div {
       height: auto;
       transition: transform .8s ease; }
   #mega-menu .megamenu-right .card a {
-    text-decoration: none; }
+    text-decoration: none;
+    display: block; }
   #mega-menu .megamenu-right .card .text-shoes {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-    color: black; }
+    color: black;
+    font-size: .8em; }
   #mega-menu .megamenu-right .card:hover .img-shoes img {
     transform: scale(1.2); }
 
@@ -703,6 +705,9 @@ section.social .social-images {
         color: white;
         font-size: .8em;
         cursor: pointer; }
+        #category section.category .category-content .other-category .prod-card .product-cat-hover .product-cat-view span a {
+          color: white;
+          text-decoration: none; }
     #category section.category .category-content .other-category .prod-card:hover .product-cat-hover {
       opacity: 1; }
 

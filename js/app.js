@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    var paginaSlider = 1;
-    var sliderContenido = document.querySelectorAll('.slider-cont .prod-card');
+
 
     function addEventListeners() {
         var menuItems = document.querySelectorAll('header .navigation ul.menu-left');
@@ -9,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         var cerrarMenu = document.querySelector('li.closeMegaMenu');
         var sliderLeftArrow = document.querySelector('.flechaizquierda');
         var sliderRightArrow = document.querySelector('.flechaderecha');
+        var linkNavigation = document.querySelector('.megamenu-right');
 
-        //console.log(sliderContenido);
 
         menuItems.forEach(element => {
             element.addEventListener('mouseover', () => {
@@ -37,54 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-    }
-
-
-
-    // funciones
-    function avanzarIzquierdaSlider() {
-
-        if (paginaSlider === 1) {
-            return;
-        } else {
-            // avanza izquierda
-            moverIzquierda();
-            paginaSlider = 1;
-        }
-    }
-
-    function avanzarDerechaSlider() {
-
-        if (paginaSlider === 1) {
-            // avanza derecha
-            moverDerecha();
-            paginaSlider = 2;
-        } else {
-            // no avanza
-            return;
-        }
-    }
-
-    function moverDerecha() {
-        sliderContenido.forEach(elemento => {
-            TweenMax.to(elemento, 1, { x: '-890px' });
+        linkNavigation.addEventListener('click', (e) => {
+            e.preventDefault();
+            let parentAnchor;
+            if (e.target.classList.contains('link-img')) {
+                parentAnchor = e.target.parentElement.parentElement;
+            } else if (e.target.classList.contains('text-shoes')) {
+                parentAnchor = e.target.parentElement;
+            }
+            const id = parentAnchor.getAttribute('data-id');
+            verDetalleProducto(id);
         });
     }
 
-    function moverIzquierda() {
-        sliderContenido.forEach(elemento => {
-            TweenMax.to(elemento, 1, { x: '0px' });
-        });
 
+
+    function verDetalleProducto(id) {
+        window.location = `detail.html?id=${id}`;
     }
 
-    function menuVisible() {
-        TweenMax.to('#mega-menu', 0.5, { autoAlpha: 1 });
-    }
 
-    function menuInvisible() {
-        TweenMax.to('#mega-menu', 0.5, { autoAlpha: 0 });
-    }
 
     addEventListeners();
+    iniciarCart();
 });

@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     var prodsArray;
-    getProducts();
+    const category = document.getElementById('category');
 
-
+    if (category) {
+        getProducts();
+    }
 
     function createHtml(arreglo) {
 
@@ -21,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             // construimos cantidad de estrellas
             estrellas = starsConstruct(producto.stars);
-            //console.log(estrellas);
 
             // construir el product card
             prodHtml = `
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${producto.name}
                 </div>
                 <div class="product-card-price">
-                    <span class="money-sign">$</span> <span>${producto.price}</span><span> USD</span>
+                    <span class="money-sign">$</span> <span class="precio-txt">${producto.price}</span><span> USD</span>
                 </div>
                 <div class="product-card-buttons">
                     <div class="prod-card-button-cart">
@@ -56,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let galeryContainer = document.querySelector('.category-items');
         galeryContainer.insertAdjacentHTML('beforeend', prodCardHtml);
     }
+
+
 
     function starsConstruct(numeroEstrellas) {
         let starsHtml = '';

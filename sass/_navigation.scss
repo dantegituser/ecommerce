@@ -97,11 +97,13 @@ header #mega-menu>div {
     }
     a {
         text-decoration: none;
+        display: block;
     }
     .text-shoes {
         font-family: $fuente-myrad;
         font-weight: bold;
         color: black;
+        font-size: .8em;
     }
     &:hover {
         .img-shoes img {
