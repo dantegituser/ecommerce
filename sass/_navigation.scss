@@ -44,6 +44,7 @@ header #mega-menu {
     position: absolute;
     width: 100%;
     visibility: hidden;
+    z-index: 88888;
 }
 
 header #mega-menu>div {
@@ -152,6 +153,7 @@ header .navigation .cart .link-cart {
         position: absolute;
         top: 15px;
         right: 0;
+        z-index: 888888;
     }
 }
 
