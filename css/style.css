@@ -205,6 +205,7 @@ header {
 
 .container-small {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto; }
 
 footer {
@@ -384,12 +385,16 @@ footer {
     box-shadow: 3px 3px 0px 0px #f4c121;
     transition: transform 0.3s ease;
     display: block; }
+    #home #new-arrivals .slideShowArrivals .slider-cont .prod-card .add-to-cart span a {
+      color: white;
+      text-decoration: none; }
   #home #new-arrivals .slideShowArrivals .slider-cont .prod-card .add-to-cart:hover span {
     transform: translateY(-3px); }
 
 section.panoramic-image {
   position: relative; }
   section.panoramic-image .panoramic-div img {
+    width: 100vw;
     max-width: 100%; }
   section.panoramic-image .panoramic-data {
     position: absolute;
@@ -497,13 +502,14 @@ section.shoes-section {
       #home .models .grid-models .modelsdiv1 .modelstext p {
         font-size: .8em;
         margin-bottom: 1rem; }
-      #home .models .grid-models .modelsdiv1 .modelstext .see-more span {
+      #home .models .grid-models .modelsdiv1 .modelstext .see-more span a {
         background-color: white;
         padding: 3px 4px;
         color: black;
         font-size: .8em;
         font-weight: bold;
-        cursor: pointer; }
+        cursor: pointer;
+        text-decoration: none; }
     #home .models .grid-models .modelsdiv1 .modelstenis {
       flex: 1 1 400px; }
   #home .models .grid-models .modelsdiv {
@@ -796,6 +802,10 @@ section.social .social-images {
         color: #096FA9;
         font-weight: bold; }
 
+#detail h2.subheading {
+  font-size: 3em;
+  margin-bottom: 3rem; }
+
 #detail .product-info-section #product-info-div .prod-2-cols {
   display: flex;
   align-items: center;
@@ -866,12 +876,9 @@ section.social .social-images {
         -moz-box-shadow: 3px 3px 0px 0px #cecece;
         box-shadow: 3px 3px 0px 0px #cecece; }
 
-#detail .product-info-full h2 {
-  font-size: 3em;
-  margin-bottom: 3rem; }
-
 #detail .product-info-full .materials-history-cont {
-  display: flex; }
+  display: flex;
+  margin-bottom: 4rem; }
   #detail .product-info-full .materials-history-cont > div {
     margin: 0 .5rem;
     font-size: .8em; }
@@ -879,16 +886,95 @@ section.social .social-images {
       margin-bottom: 2rem; }
   #detail .product-info-full .materials-history-cont .materials-cont {
     background-color: #E0EAD0;
-    padding: 2rem; }
+    padding: 4rem; }
   #detail .product-info-full .materials-history-cont .history-cont {
     border: 1px solid #999999;
-    padding: 2rem; }
+    padding: 4rem; }
 
-#detail .product-info-full .description-cont table#table-description {
-  width: 500px;
-  margin: 0 auto; }
-  #detail .product-info-full .description-cont table#table-description th,
-  #detail .product-info-full .description-cont table#table-description td {
-    padding: 3px 1rem; }
-  #detail .product-info-full .description-cont table#table-description tr:nth-child(odd) {
-    background-color: #A7B3C8; }
+#detail .product-info-full .description-cont {
+  margin-bottom: 4rem; }
+  #detail .product-info-full .description-cont table#table-description {
+    width: 500px;
+    margin: 0 auto; }
+    #detail .product-info-full .description-cont table#table-description tr {
+      border: 1px solid #B3B3B3; }
+    #detail .product-info-full .description-cont table#table-description th,
+    #detail .product-info-full .description-cont table#table-description td {
+      padding: 3px 1rem; }
+    #detail .product-info-full .description-cont table#table-description td {
+      width: 50%;
+      text-align: center;
+      color: #848383; }
+    #detail .product-info-full .description-cont table#table-description td:first-child {
+      font-weight: bold;
+      color: black;
+      text-align: left;
+      text-transform: uppercase;
+      border-right: 1px solid #B3B3B3; }
+    #detail .product-info-full .description-cont table#table-description th {
+      text-align: center; }
+    #detail .product-info-full .description-cont table#table-description tr:nth-child(odd) {
+      background-color: #F8F8F8; }
+
+#detail .shoe-rotating {
+  text-align: center; }
+  #detail .shoe-rotating .shoe-rotation-cont {
+    width: 80%;
+    margin: 0 auto; }
+    #detail .shoe-rotating .shoe-rotation-cont iframe {
+      width: 85%;
+      margin: 0 auto; }
+
+#detail section.related {
+  margin-bottom: 4rem; }
+  #detail section.related .related-row-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #detail section.related .related-row-cont .prod-card {
+      flex: 0 1 24%; }
+
+#detail section.related .related-row-cont .prod-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F9F9F9; }
+  #detail section.related .related-row-cont .prod-card .prod-card-new {
+    align-self: flex-start; }
+    #detail section.related .related-row-cont .prod-card .prod-card-new span {
+      padding: 2px 4px;
+      background: #7ac659;
+      background: linear-gradient(131deg, #7ac659 0%, #11c8f0 100%);
+      font-size: .8em;
+      color: white; }
+  #detail section.related .related-row-cont .prod-card .product-card-image {
+    position: relative;
+    height: 200px;
+    width: 200px; }
+    #detail section.related .related-row-cont .prod-card .product-card-image img {
+      max-width: 70%;
+      position: absolute;
+      top: 40px;
+      bottom: 0;
+      transform: rotate(-45deg); }
+  #detail section.related .related-row-cont .prod-card .product-card-name {
+    font-weight: bold;
+    font-size: .8em;
+    margin-bottom: 2rem; }
+  #detail section.related .related-row-cont .prod-card .product-card-price {
+    font-size: .7em; }
+  #detail section.related .related-row-cont .prod-card .prod-card-button-cart a {
+    padding: 3px 8px;
+    background: #7ac659;
+    background: linear-gradient(131deg, #7ac659 0%, #11c8f0 100%);
+    font-size: .9em;
+    color: white;
+    -webkit-box-shadow: 3px 3px 0px 0px #cecece;
+    -moz-box-shadow: 3px 3px 0px 0px #cecece;
+    box-shadow: 3px 3px 0px 0px #cecece;
+    transition: all 0.5s ease;
+    display: block; }
+    #detail section.related .related-row-cont .prod-card .prod-card-button-cart a:hover {
+      text-decoration: none;
+      transform: translateY(-3px); }

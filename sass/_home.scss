@@ -172,6 +172,10 @@
         box-shadow: 3px 3px 0px 0px rgba(244, 193, 33, 1);
         transition: transform 0.3s ease;
         display: block;
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
     .add-to-cart:hover span {
         transform: translateY(-3px);
@@ -182,6 +186,7 @@ section.panoramic-image {
     position: relative;
     .panoramic-div {
         img {
+            width: 100vw;
             max-width: 100%;
         }
     }
@@ -311,13 +316,14 @@ section.shoes-section {
                 font-size: .8em;
                 margin-bottom: 1rem;
             }
-            .see-more span {
+            .see-more span a {
                 background-color: white;
                 padding: 3px 4px;
                 color: black;
                 font-size: .8em;
                 font-weight: bold;
                 cursor: pointer;
+                text-decoration: none;
             }
         }
         .modelstenis {

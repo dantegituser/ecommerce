@@ -1,16 +1,18 @@
 function iniciarCart() {
-    console.log('cargar desde local storage');
-    console.log('cart niicado');
     readLocalStorage();
     // listeners
     const cartCont = document.querySelector('.cart-content .prod-detail');
     const linkAdd = document.querySelector('.category-items');
+    const linkAddDetail = document.querySelector('.related-row-cont');
     const deleteAll = document.querySelector('.empty-cart');
 
     deleteAll.addEventListener('click', deleteAllItems);
 
     if (linkAdd) {
         linkAdd.addEventListener('click', addTocart);
+    }
+    if (linkAddDetail) {
+        linkAddDetail.addEventListener('click', addTocart);
     }
 
 

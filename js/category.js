@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="prod-card">
                 ${nuevo}
                 <div class="product-card-image">
-                    <img src="${producto.img}" alt="">
+                    <img src="${producto.thumb1}" alt="">
                 </div>
                 ${estrellas}
                 <div class="product-card-name">
