@@ -881,7 +881,8 @@ section.social .social-images {
   margin-bottom: 4rem; }
   #detail .product-info-full .materials-history-cont > div {
     margin: 0 .5rem;
-    font-size: .8em; }
+    font-size: .8em;
+    flex: 1 1 50%; }
     #detail .product-info-full .materials-history-cont > div h3 {
       margin-bottom: 2rem; }
   #detail .product-info-full .materials-history-cont .materials-cont {
