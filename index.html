@@ -6,11 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-shop</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <style>
+        .intro-wrapper {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(80deg, #110f1f, #1b1730);
+            position: fixed;
+            z-index: 99999;
+        }
+        
+        .intro-wrapper .scene1 {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .intro-wrapper .scene2 {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .intro-wrapper .scene2 img {
+            max-width: 400px;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+        .intro-wrapper .scene2 .texto-back {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: 'Teko', sans-serif;
+            font-size: 30rem;
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+        .intro-wrapper .scene2 img.shoe1 {
+            top: 28%;
+            left: 10%;
+            transform: rotate(5deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe2 {
+            top: 12%;
+            left: 40%;
+            transform: rotate(95deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe3 {
+            bottom: 2%;
+            right: 30%;
+            transform: rotate(75deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe4 {
+            top: 50%;
+            left: 60%;
+            transform: rotate(65deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe5 {
+            top: 5%;
+            left: 70%;
+            transform: rotate(5deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe7 {
+            top: 20%;
+            left: 40%;
+            transform: rotate(15deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe8 {
+            top: 2%;
+            left: 10%;
+            transform: rotate(35deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe9 {
+            bottom: 2%;
+            right: 30%;
+            transform: rotate(15deg);
+        }
+        
+        .intro-wrapper .scene2 img.shoe10 {
+            top: 50%;
+            left: 20%;
+        }
+        
+        .intro-wrapper .scene1 .logo-animated {
+            width: 50%;
+            height: 50%;
+            background-image: url(img/bg1.jpg);
+            background-position: center;
+            font-family: 'Teko', sans-serif;
+            font-size: 6rem;
+            color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            line-height: 40vh;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: anim1 1s infinite;
+        }
+        
+        .progress-bar {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 3px;
+            background-color: grey;
+        }
+        
+        .progress-bar .bar-item {
+            width: 0%;
+            height: 100%;
+            background-color: white;
+        }
+        
+        @keyframes anim1 {
+            0% {
+                background-image: url(img/bg1.jpg);
+            }
+            10% {
+                background-image: url(img/bg2.jpg);
+            }
+            20% {
+                background-image: url(img/bg3.jpg);
+            }
+            30% {
+                background-image: url(img/bg4.jpg);
+            }
+            40% {
+                background-image: url(img/bg5.jpg);
+            }
+            50% {
+                background-image: url(img/bg6.jpg);
+            }
+            60% {
+                background-image: url(img/bg7.jpg);
+            }
+            70% {
+                background-image: url(img/bg8.jpg);
+            }
+            80% {
+                background-image: url(img/bg9.jpg);
+            }
+            90% {
+                background-image: url(img/bg10.jpg);
+            }
+            100% {
+                background-image: url(img/bg1.jpg);
+            }
+        }
+    </style>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="intro-wrapper">
+        <div class="scene1">
+            <div class="logo-animated">
+                e-shop
+            </div>
+
+            <div class="progress-bar">
+                <div class="bar-item"></div>
+            </div>
+
+        </div>
+        <!--scebne1-->
+        <div class="scene2">
+            <img src="img/intro/01.png" class="intro-shoes shoe1" />
+            <img src="img/intro/02.png" class="intro-shoes shoe2" />
+            <img src="img/intro/03.png" class="intro-shoes shoe3" />
+            <img src="img/intro/04.png" class="intro-shoes shoe4" />
+            <img src="img/intro/05.png" class="intro-shoes shoe5" />
+            <img src="img/intro/06.png" class="intro-shoes shoe6" />
+            <img src="img/intro/07.png" class="intro-shoes shoe7" />
+            <img src="img/intro/08.png" class="intro-shoes shoe8" />
+            <img src="img/intro/09.png" class="intro-shoes shoe9" />
+            <img src="img/intro/10.png" class="intro-shoes shoe10" />
+            <div class="texto-back">
+                sport&centerdot;women&centerdot;classic&centerdot;men&centerdot;retro
+            </div>
+        </div>
+        <!--scene2-->
+
+    </div>
     <div class="wrapper-full">
         <header>
             <div class="menu-container">
@@ -582,6 +776,53 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script>
+        setTimeout(() => {
+            let tl1 = gsap.timeline();
+            let tl2 = gsap.timeline({
+                paused: true
+            });
+
+
+            tl1.eventCallback("onComplete", function() {
+                tl2.play(0);
+            });
+
+            tl1.to('.bar-item', {
+                    duration: 5,
+                    width: '100%'
+                })
+                .to('.scene1', {
+                    duration: 1,
+                    autoAlpha: 0,
+                    display: 'none'
+                });
+
+            tl2.to(".intro-shoes", {
+                    duration: 1,
+                    autoAlpha: 1,
+                    stagger: 0.3
+                }, 0)
+                .to(".intro-shoes", {
+                    autoAlpha: 0,
+                    stagger: 0.3
+                })
+                .fromTo('.texto-back', {
+                    xPercent: 100,
+                    autoAlpha: 0.5
+                }, {
+                    xPercent: -110,
+                    duration: 8
+                }, 0)
+                .to('.intro-wrapper', {
+                    duration: 1,
+                    width: '0%',
+                    display: 'none'
+                });
+
+
+        }, 1500);
+    </script>
     <script src="js/app.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
