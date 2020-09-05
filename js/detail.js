@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const detailPage = document.getElementById('detail');
+    let cuerpo = document.getElementById('bodydetail');
     let detailRow = document.getElementById('product-info-div');
     let iframe = document.getElementById('rotationframe');
     // obtenemos el id del url
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function getProductsArray() {
-        let prods = await fetch("../products.json")
+        let prods = await fetch("./products.json")
             .then(data => {
                 return data.json();
             }).then(prods => {
@@ -127,6 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         iframe.src = arrayIframes[randomNum];
         //console.log(randomNum);
         detailRow.insertAdjacentHTML('afterbegin', htmlDetalleProd);
+        $('#zoom').elevateZoom();
     }
 
     function randomInt(min, max) {

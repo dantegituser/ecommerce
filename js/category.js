@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
     async function getProducts() {
-        let prods = await fetch("../products.json")
+        let prods = await fetch("./products.json")
             .then(data => {
                 return data.json();
             }).then(prods => {
